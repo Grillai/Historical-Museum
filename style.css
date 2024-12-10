@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-Black.ttf') format('truetype');
+    font-weight: 900; /* Peso specifico per Black */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-Bold.ttf') format('truetype');
+    font-weight: 700; /* Peso specifico per Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-ExtraBold.ttf') format('truetype');
+    font-weight: 800; /* Peso specifico per ExtraBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-Medium.ttf') format('truetype');
+    font-weight: 500; /* Peso specifico per Medium */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-Regular.ttf') format('truetype');
+    font-weight: 400; /* Peso specifico per Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-SemiBold.ttf') format('truetype');
+    font-weight: 600; /* Peso specifico per SemiBold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-ExtraLight.ttf') format('truetype');
+    font-weight: 200; /* Peso specifico per ExtraLight */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-Light.ttf') format('truetype');
+    font-weight: 300; /* Peso specifico per Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nohemi';
+    src: url('../fonts/Nohemi-Thin.ttf') format('truetype');
+    font-weight: 100; /* Peso specifico per Thin */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Andalos';
+    src: url('../fonts/Andalos.otf') format('truetype');
+    font-weight: 400;
+     /* Peso specifico per Black */
+    font-style: normal;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    font-family: 'Nohemi', sans-serif;
+    height: 900vh;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+    height: 900vh;
+}
+
+#Titolo{
+    will-change: transform;
+    text-align: center;
+    
+    font-weight: 300;
+    font-size: 7rem;
+    color: white;
+    
+    padding-top: 50px;
+}
+
+.container_info_inziali{
+    will-change: transform;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: .55rem 1rem;
+    
+}
+
+.container_info_inziali h2{
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+    
+    font-family: "Montserrat", sans-serif;
+   
+}
+
+.Container_Arte{
+    height: 650px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.151);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.151);
+    margin-top: 50px;
+    
+}
+
+.Oggetto_Arte{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.164);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.164);
+    transform-origin: center center;
+    will-change: transform;
+    padding: 40px 0;
+}
+
+.Parte_Sinistra{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    border-right: 1px solid rgba(128, 128, 128, 0.164);
+}
+
+.Parte_Sinistra img{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    max-width: 500px;
+    height: 100%;
+    object-fit: cover;
+    
+  
+}
+
+#data{
+    width: 100%;
+    position: absolute;
+    font-family: Andalos;
+    color: rgb(243, 0, 0);
+    font-size: 34px;
+    font-weight: 200;
+    left: 20%;
+    top: 0%; 
+    transform: translate(-50%, 0%);
+}
+
+.Firma{
+    position: absolute;
+    right: 4%;
+    bottom:  0%; 
+   
+    width: 180px;
+    height: 40px;
+}
+
+.Firma img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.Parte_Destra{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+}
+
+.Parte_Destra h2{
+    will-change: transform;
+    color: white;
+    font-size: 5rem;
+    font-weight: 200;
+    width: 100%;
+    text-align: center;
+}
+
+.Categorie{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.Categorie h3{
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    margin-left: 15px;
+    color: white;
+    padding: 0.33rem 0.7rem;
+    max-width: 180px;
+    background-color: rgb(70, 70, 70);
+    border-radius: 20px;
+}
+
+
+.Testo_descrittivo{
+    margin-top: 25px;
+    max-width: 85%;
+}
+
+.Testo_descrittivo p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    text-align: justify;
+}
+
+
+
+.Container_immagine_artista{
+    max-width: 200px;
+    height: 180px;
+    position: absolute;
+    display: none;
+    pointer-events: none;
+    
+}
+
+
+.Container_immagine_artista img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scaleX(-1);
+}
+
+
+
+
+
+
+
